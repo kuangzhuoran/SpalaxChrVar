@@ -1,0 +1,50 @@
+#Used for Synteny.sh
+
+SetParaFor = global
+GenomeInfoFile1=galili.length
+GenomeInfoFile2=golani.length
+GenomeInfoFile3=carmeli.length
+GenomeInfoFile4=judaei.length
+LinkFileRef1VsRef2=galili_golani.filter.link
+LinkFileRef2VsRef3=golani_carmeli.filter.link
+LinkFileRef3VsRef4=carmeli_judaei.filter.link
+ChrSpacingRatio=10
+################################ Figure ##############################################
+##############
+
+##############################     画布 和 图片 参数配置 #############################
+####
+排序 chr1,chr2,chr3
+######    默认各层的配置参数 若各层没有配置的会，则会用这儿的参数 ######
+body=1400
+down=55
+SetParaFor = Genome1
+GenomeName=Galili
+ChrWidth=5
+ChrSpacing=10
+ChrNameShow=1
+ChrNameColor=black
+
+SetParaFor = Genome2
+GenomeName=Golani
+ChrWidth=5
+ChrSpacing=10
+ChrNameShow=1
+ChrNameColor=black
+ChrNameShiftY=30
+
+SetParaFor = Genome3
+GenomeName=Carmeli
+ChrWidth=5
+ChrSpacing=10
+ChrNameShow=1
+ChrNameColor=black
+ChrNameShiftY=50
+
+SetParaFor = Genome4
+GenomeName=Judaei
+ChrWidth=5
+ChrSpacing=10
+ChrNameShow=1
+ChrNameColor=black
+ChrNameShiftY=70
