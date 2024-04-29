@@ -69,7 +69,7 @@ awk '{print "Chr"'${i}'"\t"$1"\t"$2"\t"$5}' Chr${i}.norm.50kb.windows | awk '{if
 done
 cat Chr*.norm.50kb.judaei > all.norm.50kb.judaei && rm Chr*.norm.50kb.judaei
 
-for i in {1..26}
+for i in {1..29}
 do
 awk '{print "Chr"'${i}'"\t"$1"\t"$2"\t"$4}' Chr${i}.norm.50kb.windows | awk '{if($4==-1)print $1"\t"$2"\t"$3"\t""0"; else print $1"\t"$2"\t"$3"\t"$4}' > Chr${i}.norm.50kb.carmeli
 done
